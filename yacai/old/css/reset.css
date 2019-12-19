@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'MicrosoftYaHei';
+}
+a {
+  color: #666666;
+}
+img,
+input {
+  border: 0 none;
+  outline-style: none;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.clearfix::after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+  display: block;
+}
+.clearfix {
+  zoom: 1;
+}
+

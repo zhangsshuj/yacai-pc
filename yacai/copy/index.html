@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>亞財-首页</title>
+	<link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/headfooter.css">
+	<link rel="stylesheet" href="./css/flex.css">
+	<link rel="stylesheet" href="./css/sone.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<script src="./js/jquery-1.12.4.js"></script>
+	<script src="./js/transform.js"></script>
+	<script src="./js/main.js"></script>
+	
+</head>
+<body>
+	<div class="header flex flex--align-items--center">
+		<div class="flex flex--justify-content--space-between flex--align-items--center">
+            <a class='bgCon' href="./index.html">
+                <img style='width:100%;height:auto;' src="./img/logo.png">
+            </a>
+			<ul class="header-nav flex">
+				<li class="on"><a href="./index.html">&nbsp;&nbsp;&nbsp;&nbsp;首页</a></li>
+				<li><a href="./pages/about.html">關於我們</a></li>
+				<li><a href="./pages/contact.html">聯繫我們</a></li>
+				<li class='downloadApp'  onclick='showDownloadApp1()' onmouseover='showDownloadApp()' onmouseout='hideDownloadApp()'>
+					<a href="javascript:void(0)">下載APP</a>
+					<div style='display: none' id='qrcodeCon'>
+						<div class='qrcodeCon' style='background-image:url("./img/index/qrcodeCon.png"); background-size: cover;'  >
+							<img class='qrcode' src="./img/index/qrcode.png">
+						</div>
+					</div>
+                </li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- banner -->
+	<div class="banner">
+		<img src="./img/index/banner.png" alt="">
+	</div>
+	<!-- content -->
+	<div class="content">
+		<div class="app-index">
+            <div>
+                <div class="left">
+                    <p class="t_content">
+                        <span class='title'>亞財APP</span>
+                        提供香港主要銀行產品壹站式比價，包含賬戶、存款、理財等。為用戶選擇適合的賬戶和投資產品提供方便、快捷的工具。
+                    </p>
+                    <div class='constrc'>
+                        <span class="t_title">首頁</span>
+                        <p class="t_content">採用理財期限和收益排行相結合的方式進行排序，產品的收益綜合比價一目了然，且基於使用者偏好、位置資訊等維度，為使用者提供精准快速的投資決策。</p>
+                    </div>
+                    <div class="t_button">Show me more</div>
+                </div>
+                <div class="right">
+                    <img src="./img/index/app-index.png" alt="">
+                </div>
+            </div>
+		</div>
+		<div class="app-qingdan">
+            <!--<img src="./img/index/bgc.png" alt="">-->
+            <div>
+                <div class="ww flex flex--justify-content--space-between">
+                    <div class='left'><img src="./img/index/app-shoucang.png" alt=""></div>
+                    <div class='right'>
+                        <span class="t_title">銀行清單頁</span>
+                        <p class="t_content">根據拼音A-Z對所有銀行進行排序，使用者點擊排序字母可以快速定位到想要查找的銀行，並將喜歡的銀行添加到收藏銀行中。</p>
+                        <div class="t_button">Show me more</div>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="app-details">
+            <!--<img src="./img/index/bgc2.png" alt="">-->
+			<div class="ww flex flex--justify-content--space-between">
+				<div class="left">
+					<span class="t_title">產品詳情頁</span>
+					<p class="t_content">產品詳情充分展示了產品的性質、存取規則、利率等詳盡資訊，並且有風險等級提示，明確告知使用者各種風險。</p>
+					<div class="t_button">Show me more</div>
+				</div>
+				<div class="right"><img src="./img/index/app.png" alt=""></div>
+			</div>
+		</div>
+		<div class="app-my">
+            <!--<img src="./img/index/bgc.png" alt="">-->
+			<div class="ww flex flex--justify-content--space-between">
+				<div class='left'><img src="./img/index/app-tuoyuan.png" alt=""></div>
+				<div class='right'>
+					<span class="t_title">個人中心頁</span>
+					<p class="t_content">使用者可對自己的賬戶進行便捷管理，並通過我的收藏直接觸達已收藏的銀行與產品，操作簡便明了。</p>
+					<div class="t_button">Show me more </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="footer footer-index">
+		<div>
+			<a class='yinsi' style='text-decoration: underline;color:#999999' href="./pages/yinsi.html">亞財私隱政策</a>
+		</div>
+		<div>
+            <a class='yinsi' style='text-decoration: underline;color:#999999' href="./pages/yinsiEng.html">Yacai-Privacy Policy</a>
+		</div>
+		<div>
+			<p>公司郵箱：udo@bicai365.com</p>
+		</div>
+	</div>
+	<script src="./js/index.js"></script>
+</body>
+</html>

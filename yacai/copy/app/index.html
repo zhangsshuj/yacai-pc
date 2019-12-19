@@ -1,0 +1,143 @@
+<html data-dpr="2" style="font-size: 32px;"><head>
+  <script>
+  </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=yes">
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/browser.js"></script>
+    <script src="./js/flexible.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/download.css">
+    <title></title>
+
+</head>
+  <body onresize="document.activeElement.scrollIntoView(true);" style="font-size: 24px;">
+    <div id="app">
+    	<div id='en_US'>
+    		<div class="download">
+	    		<img src="./img/download/logo.png" alt="" class="logo"> 
+	    		<div class="title titleUS">One stop for Hong Kong banks</div> 
+				<img src="./img/download/en_US.png" alt="" class="transImg transImgUS"> 
+				<div onclick='download("en_USdownloadPop")' class="button">Download immediately</div>
+			</div>
+			<div class='downloadPop' id='en_USdownloadPop'>
+		        <div class='popuBar'>
+		            <img src="./img/download/popuBar.png" alt="">
+		        </div>
+		        <div class='popuBtn'>
+		            <div>
+		                <span>1. Click the button</span>
+		                <img src="./img/download/popuBtn.png" alt="">
+		            </div>
+		            <div>&nbsp;&nbsp;&nbsp;in the upper right corner</div>
+		            <div class='downloadTxt3'>2. Choose to open in browser</div>
+		        </div>
+		    </div>
+    	</div>
+    	<div id='zh_CN'>
+    		<div class="download">
+	    		<img src="./img/download/logo.png" alt="" class="logo"> 
+	    		<div class="title">香港银行  一站直达</div> 
+				<img src="./img/download/zh_CN.png" alt="" class="transImg"> 
+				<div onclick='download("zh_CNdownloadPop")' class="button">立即下载</div>
+			</div>
+			<div class='downloadPop' id='zh_CNdownloadPop'>
+		        <div class='popuBar'>
+		            <img src="./img/download/popuBar.png" alt="">
+		        </div>
+		        <div class='popuBtn'>
+		            <div>
+		                <span>1. 点击右上角</span>
+		                <img src="./img/download/popuBtn.png" alt="">
+		                <span>按钮</span>
+		            </div>
+		            <div class='downloadTxt3'>2. 选择在浏览器中打开</div>
+		        </div>
+		    </div>
+    	</div>
+    	<div id='zh_HK'>
+    		<div class="download">
+	    		<img src="./img/download/logo.png" alt="" class="logo"> 
+	    		<div class="title">香港銀行 一站直達</div> 
+				<img src="./img/download/zh_HK.png" alt="" class="transImg"> 
+				<div onclick='download("zh_HKdownloadPop")' class="button">立即下載</div>
+			</div>
+			<div class='downloadPop' id='zh_HKdownloadPop'>
+		        <div class='popuBar'>
+		            <img src="./img/download/popuBar.png" alt="">
+		        </div>
+		        <div class='popuBtn'>
+		            <div>
+		                <span>1. 點擊右上角</span>
+		                <img src="./img/download/popuBtn.png" alt="">
+		                <span>按鈕</span>
+		            </div>
+		            <div class='downloadTxt3'>2. 選擇在瀏覽器中打開</div>
+		        </div>
+		    </div>
+    	</div>
+	</div>
+
+
+<script>
+   window.onload = function() {
+    	$("#en_US").hide()
+		$("#zh_CN").hide()
+		$("#zh_HK").hide()
+     	let windowUrl=window.location.href
+     	console.log (windowUrl)
+     	let language=''
+     	if (windowUrl.indexOf('language=')>-1) {
+     		language=windowUrl.split('language=')[1]
+     	} else {
+     		language='zh_HK'
+     	}
+     	switch(language) {
+     		case 'en_US':
+     			$("#en_US").show()
+     			$("#en_USdownloadPop").hide()
+     			$("#zh_CN").hide()
+     			$("#zh_HK").hide()
+     		break;
+     		case 'zh_CN':
+     			$("#zh_CN").show()
+     			$("#zh_CNdownloadPop").hide()
+     			$("#zh_HK").hide()
+     			$("#en_US").hide()
+     		break;
+     		case 'zh_HK':
+     			$("#zh_HK").show()
+     			$("#zh_HKdownloadPop").hide()
+     			$("#zh_CN").hide()
+     			$("#en_US").hide()
+     		break;
+     		default:
+     			$("#zh_HK").show()
+     			$("#zh_HKdownloadPop").hide()
+     			$("#zh_CN").hide()
+     			$("#en_US").hide()
+     		break;
+     	}
+
+     	download = function (type) {
+     		// window.location.href=window.location.href
+     		console.log(androidOrIos)
+     		console.log(browser)
+     		if (androidOrIos == 'android') {
+                if (browser=='openBrowser') { //浏览器打开
+                    window.location.href='https://yacai-hk.oss-cn-hongkong.aliyuncs.com/androidApk/app-yacai-release.apk'
+                } else if (browser=='selfBrowser'){ // 微信，QQ等内部浏览器
+                    $("#"+type).show()
+                }
+            } else if (androidOrIos == 'ios') {
+                window.location.href='https://apps.apple.com/app/id1464499704'
+            }
+     	}
+
+    }
+</script>
+</body>
+</html>

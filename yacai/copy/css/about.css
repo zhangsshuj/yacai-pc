@@ -1,0 +1,322 @@
+.banner img {
+  width: 100%;
+}
+
+.about-content p:first-child {
+  font-size: 20px;
+  border-bottom: 2px solid #666666;
+  padding-bottom: 32px;
+}
+.about-content p:last-child,
+.about-content p:nth-child(2) {
+  text-indent: 2em;
+  margin-top: 29px;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.content {
+  margin-top: 186px;
+  font-weight: bold;
+}
+.content .t-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 135px;
+  display: none;
+}
+.content .t-title i {
+  display: inline-block;
+  width: 45px;
+  height: 17px;
+  background: url('../img/contact/dian.png') no-repeat center;
+  margin: 0 35px;
+}
+
+.contact-content > div > div:first-child .beijing {
+  width: 310px;
+  height: 270px;
+  position: absolute;
+  top: -86px;
+  left: 125px;
+}
+.contact-content > div > div:first-child .beijing p {
+	padding: 0 30px;
+	width: 120px;
+	height: 60px;
+	line-height: 1.5;
+	position: absolute;
+	top: 0;
+	right: 189px;
+	background: url('../img/contact/bejing-box.png') no-repeat center;
+	background-size: 100% 100%;
+	box-sizing: border-box;
+}
+.contact-content > div > div:first-child .beijing p img {
+	width: 16px;
+	height: 20px;
+	margin-top: -4px;
+	margin-right: 5px;
+}
+.contact-content > div > div:first-child .beijing>img {
+	display: block;
+	width: 190px;
+	height: 240px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.contact-content > div > div:first-child .hongkang {
+  width: 260px;
+  height: 86px;
+  position: absolute;
+  right: -88px;
+  bottom: 53px;
+}
+.contact-content > div > div:first-child .hongkang p{
+	position: absolute;
+	left: 139px;
+	top: 0;
+	background: url('../img/contact/bejing-box.png') no-repeat center;
+	background-size: 100% 100%;
+	padding: 0 30px;
+	width: 120px;
+	height: 60px;
+	line-height: 1.5;
+	box-sizing: border-box;
+}
+.contact-content > div > div:first-child .hongkang p img {
+	width: 16px;
+	height: 20px;
+	margin-top: -4px;
+	margin-right: 5px;
+}
+.contact-content > div > div:first-child .hongkang>img {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 140px;
+	height: 56px;
+}
+
+.contact-content .left .bg {
+	width: 100%;
+}
+.contact-content .address{
+	margin-top: 7%;
+}
+.contact-content .address > p {
+  font-size: 20px;
+  border-bottom: 2px solid #666666;
+  padding-bottom: 32px;
+}
+.contact-content .address > div {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.contact-content .address > div p {
+  line-height: 1.5;
+  font-weight: bold;
+  color: #333333;
+}
+.contact-content .address > div > div {
+  margin-top: 17px;
+}
+.contact-content  .address > div > div p {
+  line-height: 1.5;
+}
+.content {
+  /*width: 90%;*/
+  /*max-width: 1180px;*/
+  margin: 0 auto;
+  background: url('../img/contact/bgcc.png') no-repeat right bottom;
+}
+
+@media screen and (max-width:1920px) {
+    .contact-content,.about-content {
+		width:90%;
+        overflow: hidden;
+        margin: 2em auto;
+		margin-top: 10%;
+		position: relative;
+    }
+	.about-content .left {
+		float: left;
+		width: 50%;
+	}
+	.contact-content .left{
+		float: left;
+		width: 60%;
+	}
+	.about-right{
+		text-align: right;
+	}
+	.contact-content .right, .about-content .right {
+		float: right;
+		width: 40%;
+	}
+	.contact-right{
+		position: absolute;
+		right: 5%;
+	}
+  .footer div,  .header .header-nav li{
+    font-size: 14px;
+	 }
+	 .about-content p:first-child {
+		 font-size: 20px;
+	 }
+	 .about-content p:last-child, .about-content p:nth-child(2) {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width:1400px) {
+    .contact-content,.about-content {
+        overflow: hidden;
+        margin: 2em auto;
+		margin-top: 10%;
+		width:90%;
+		position: relative;
+    }
+	.about-right{
+		text-align: right;
+	}
+	.about-content .left {
+		float: left;
+		width: 50%;
+	}
+	.contact-content .left{
+		float: left;
+		width: 60%;
+	}
+	.contact-content .right, .about-content .right {
+		float: right;
+		width: 40%;
+	}
+	.contact-right{
+		position: absolute;
+		right: 5%;
+	}
+	.footer div,  .header .header-nav li{
+			font-size: 14px;
+	}
+	.about-content p:first-child {
+		font-size: 20px;
+	}
+	.about-content p:last-child, .about-content p:nth-child(2) {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width:1312px) {
+    .contact-content,.about-content {
+        overflow: hidden;
+        margin: 2em auto;
+		margin-top: 10%;
+		width:90%;
+		position: relative;
+    }
+	.about-right{
+		text-align: right;
+	}
+	.about-content .left {
+		float: left;
+		width: 50%;
+	}
+	.contact-content .left{
+		float: left;
+		width: 60%;
+	}
+	.contact-content .right, .about-content .right {
+		float: right;
+		width: 40%;
+	}
+	.contact-right{
+		position: absolute;
+		right: 5%;
+	}
+	.footer div,  .header .header-nav li{
+			font-size: 14px;
+	}
+	.about-content p:first-child {
+		font-size: 20px;
+	}
+	.about-content p:last-child, .about-content p:nth-child(2) {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width:1100px) {
+    .contact-content,.about-content {
+        overflow: hidden;
+        margin: 2em auto;
+		margin-top: 10%;
+		width:90%;
+		position: relative;
+    }
+	.about-right{
+		text-align: right;
+	}
+	.about-content .left {
+		float: left;
+		width: 50%;
+	}
+	.contact-content .left{
+		float: left;
+		width: 60%;
+	}
+	.contact-content .right, .about-content .right {
+		float: right;
+		width: 40%;
+	}
+	.contact-right{
+		position: absolute;
+		right: 5%;
+	}
+    .footer div,  .header .header-nav li{
+        font-size: 14px;
+		}
+		.about-content p:first-child {
+			font-size: 20px;
+		}
+		.about-content p:last-child, .about-content p:nth-child(2) {
+			font-size: 14px;
+		}
+}
+
+/***************- mobile -**************/
+@media screen and (max-width:800px){
+    .contact-content,.about-content {
+        overflow: hidden;
+        margin: 1em auto;
+		width:90%;
+    }
+    .contact-content .right, .about-content .right {
+        margin-top: 1em;
+    }
+	.contact-content .left,.about-content .left {
+		width: 100%;
+	}
+	.contact-content .right, .about-content .right {
+		width: 100%;
+	}
+	.about-content .right {
+		text-align: center;
+	}
+	.about-content .right img {
+		width: 70%;
+	}
+	.footer div,  .header .header-nav li{
+		font-size: .36rem;
+	}
+	.about-content p:first-child {
+		font-size: .5rem;
+	}
+	.about-content p:last-child, .about-content p:nth-child(2) {
+		font-size: .36rem;
+	}
+	.contact-right{
+		position: static;
+	}
+}
